@@ -35,3 +35,10 @@ public final class Atomic<Value> {
         set { lock.around { value[keyPath: keyPath] = newValue } }
     }
 }
+
+
+extension Atomic: Equatable where Value: Equatable {
+    public static func == (lhs: Atomic<Value>, rhs: Atomic<Value>) -> Bool {
+        lhs.read { left in rhs.read { right in left == right} }
+    }
+}
