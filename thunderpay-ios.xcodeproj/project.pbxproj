@@ -25,22 +25,9 @@
 		B10F64DF2D180662004DDA2F /* thunderpay-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "thunderpay-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		B10F64E72D180662004DDA2F /* Exceptions for "thunderpay-ios" folder in "thunderpay-ios" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			publicHeaders = (
-				thunderpay_ios.h,
-			);
-			target = B10F64D42D180661004DDA2F /* thunderpay-ios */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B10F64D72D180661004DDA2F /* thunderpay-ios */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				B10F64E72D180662004DDA2F /* Exceptions for "thunderpay-ios" folder in "thunderpay-ios" target */,
-			);
 			path = "thunderpay-ios";
 			sourceTree = "<group>";
 		};
