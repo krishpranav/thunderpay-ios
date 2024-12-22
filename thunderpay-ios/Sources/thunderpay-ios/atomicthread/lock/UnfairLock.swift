@@ -20,3 +20,13 @@ final class UnfairLock {
         unfairLock.deallocate()
     }
 }
+
+extension UnfairLock: Lock {
+    func lock() {
+        os_unfair_lock_lock(unfairLock)
+    }
+    
+    func unlock() {
+        os_unfair_lock_unlock(unfairLock)
+    }
+}
