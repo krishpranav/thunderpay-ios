@@ -42,3 +42,10 @@ extension Atomic: Equatable where Value: Equatable {
         lhs.read { left in rhs.read { right in left == right} }
     }
 }
+
+extension Atomic: Hashable where Value: Hashable {
+    public func hash(into hasher: inout Hasher) {
+        read { hasher.combine($0) }
+    }
+}
+
